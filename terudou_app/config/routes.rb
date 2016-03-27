@@ -1,4 +1,17 @@
 Rails.application.routes.draw do
+  get 'terudou_app/home'
+  #get 'terudou_app/profile'
+  #get 'terudou_app/gallary'
+  #get 'terudou_app/blog'
+  #get 'terudou_app/contact'
+
+  get '/profile' => 'terudou_app#profile'
+  get '/gallary' => 'terudou_app#profile'
+  get '/blog' => 'terudou_app#profile'
+  get '/contact' => 'terudou_app#profile'
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
