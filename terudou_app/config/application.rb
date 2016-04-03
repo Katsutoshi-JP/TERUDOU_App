@@ -22,5 +22,8 @@ module TerudouApp
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # 2016/4/1 adjustment image files
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
   end
 end

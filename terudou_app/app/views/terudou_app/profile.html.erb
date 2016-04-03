@@ -2,12 +2,19 @@
 <html lang="ja">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>アート書道家 | 照道（TERUDOU）| PROFILE</title>
+<% provide(:title, 'Profile') %>
 <meta name="keywords" content="照道,アート書道家,書道">
 <meta name="description" content="アート書道家 | 照道（TERUDOU）">
 <meta name="viewport" content="width=device-width">
+
+<!--
+Link to old stylesheets
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/profile.css">
+-->
+<link rel="stylesheet" type="text/css" href="../../assets/sylesheets/style.css.scss">
+<link rel="stylesheet" type="text/css" href="../../assets/sylesheets/profile.css.scss">
+
 </head>
 <body>
 <div id="fb-root"></div>
@@ -23,9 +30,12 @@
 <div id="header">
 	<div class="inner">
 		<div class="logo">
-			<a href="index.html"><img src="images/logo.png" alt="ロゴ"></a>
+			<!-- <a href="index.html"><img src="images/logo.png" alt="ロゴ"></a>
+			new Link to the logo.png
+			 -->
+			<a href="index.html"><%= image_tag 'logo.png' %></a>
 		</div>
-	
+
 		<!-- トップナビゲーション -->
 		<div id="menu">
 			<h1>アート書道家 | <span>照道</span>TERUDOU</h1>
@@ -48,7 +58,11 @@
 	<section class="gridWrapper">
 		<article class="grid">
 			<h2>Profile</h2>
+<!--
 <img id="profile" src="images/profile/profile1.png" alt="profile">
+-->
+<img id="profile" <%= image_tag 'profile/profile1.png' %>
+
 <p>
 1985年7月生まれ。岩手県出身、神奈川県在住。
 </p><p>
@@ -57,7 +71,12 @@
 ふと、先輩に言われた<br/>
 <span class="serif">「お前はどんな時でも笑ってるよな。お前の笑顔を見ると自分も頑張らないとと思うよ」</span>
 </p>
+
+<!--
 <img id="profile2" src="images/profile/profile2.png" alt="profile2">
+-->
+<img id="profile2" <%= image_tag 'profile/profile2.png' %>
+
 <p>その一言がきっかけで<br/>
 <span class="serif">「笑顔」</span>という無形のココロと<br/>
 <span class="serif">「文字」</span>という有形の心を融合し<br/>
@@ -69,7 +88,10 @@
 <p>
 みなさんを明るく<span class="serif">『照』</span>らす書の<span class="serif">『道』</span>へご案内します。
 </p>
+<!--
 <img id="profile3" src="images/profile/profile3.png" alt="profile3">
+-->
+<img id="profile3" <%= image_tag 'profile/profile3.png' %>
 
 			<div id="keireki">
 				<p>【経歴】</p>
@@ -97,7 +119,7 @@
 				</blockquote></div></div>
 			</div>
 			<!-- / Facebook -->
-			
+
 			<!-- Twitter -->
 			<div id="twitter">
 				<a href="https://twitter.com/terudou334" target="_blank">Twitter<br/></a>

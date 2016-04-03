@@ -1,0 +1,270 @@
+@charset "utf-8";
+
+/* 全体 */
+ol, ul {
+list-style: none;
+}
+article, footer, header, section {
+display: block;
+}
+
+body{
+color:#333;
+font-size: 1em;
+letter-spacing: 0.08em;
+line-height: 180%;
+font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Sans-serif;
+background:#FFECCC;
+margin: 0;
+outline: 0;
+padding: 0;
+}
+
+/* リンク */
+a{
+  color:#df8b04;
+  text-decoration:none;
+}
+a:hover{
+  color:#f6a401;
+}
+a:active, a:focus{
+  outline:0;
+}
+a img{
+border: 0;
+}
+
+/* 汎用 */
+.inner{
+margin:0 auto;
+width:100%;
+}
+
+/**************************
+/* ヘッダー
+**************************/
+#header{
+overflow:hidden;
+}
+
+/* ロゴ */
+.logo{
+float:left;
+font-size:1.5em;
+font-weight:bold;
+line-height:1;
+padding:0 0 10px 0;
+margin:0;
+font-family:"ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝","MS PMincho",serif;
+}
+.logo img{
+width:auto;
+}
+.logo span{
+font-size:0.5em;
+font-weight:normal;
+}
+
+/* メニュー */
+#menu{
+float:right;
+}
+#menu h1{
+color:#df8b04;
+text-decoration:none;
+text-align:right;
+font-size:0.75em;
+font-weight:normal;
+margin:0;
+padding:0;
+outline:0;
+font-family:"ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝","MS PMincho",serif;
+}
+#menu h1 span{
+font-size:1.5em;
+font-weight:bold;
+}
+#menu ul{
+overflow:hidden;
+background:#df8b04;
+margin:0 auto 20px;
+padding:0;
+}
+#menu li{
+width:20%;
+float:left;
+}
+#menu a{
+font-size:1em;
+display:block;
+padding:5px 0 20px 10px;
+color:#fcfcfc;
+border-left:1px solid #fff;
+}
+#menu li:first-child a{
+border:0;
+}
+#menu li.active a,#menu a:hover{
+background:#f6a401;
+}
+
+/**************************
+/* コンテンツ
+**************************/
+#wrapper{
+margin:0 auto;
+padding:0;
+position:relative;
+}
+
+/**************************
+/* グリッド
+**************************/
+.gridWrapper{
+clear:both;
+padding:10px 0 0 0;
+overflow:hidden;
+}
+.grid{
+padding-bottom:10px;
+}
+.grid p{
+padding:5px 10px;
+}
+h2{
+clear:both;
+font-family:"ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝","MS PMincho",serif;
+padding:5px 10px;
+font-size:1.2em;
+border-bottom:3px solid #f6a401;
+color:#f6a401;
+}
+
+/**************************
+/* フッター
+**************************/
+#footer{
+clear:both;
+text-align:right;
+}
+
+/* サブメニュー */
+.submenu ul{
+margin:0;
+padding:0;
+font-size:0.8em;
+border-bottom:3px solid #f6a401;
+}
+.submenu li{
+padding:0 7px 0 5px;
+margin-bottom:3px;
+list-style:none;
+border-bottom:0;
+display:inline-block;
+border:0;
+}
+
+/* コピーライト */
+.copyright{
+float:left;
+font-size:0.7em;
+padding:0;
+}
+
+/* フッター用ロゴ */
+.footer_logo{
+float:right;
+font-size:1.5em;
+font-weight:bold;
+line-height:0;
+font-family:"ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝","MS PMincho",serif;
+}
+.footer_logo span{
+font-size:0.5em;
+font-weight:normal;
+}
+
+/* PC用 */
+@media only screen and (min-width:940px){
+  #wrapper,.inner{
+  width:940px;
+  padding:0;
+  }
+  #menu{
+  width:70%;
+  padding:0;
+  }
+
+  #wrapper{
+  padding-bottom:20px;
+  }
+  #facebook{
+  float:left;
+  width:50%;
+  }
+  #twitter{
+  float:right;
+  width:50%;
+  }
+}
+
+
+/* モニター幅960px以下 */
+@media only screen and (max-width:940px){
+  #menu{
+  width:70%;
+  padding:0;
+  }
+  #menu li{
+  width:20%;
+  border-right:1px solid #f6a401;
+  border-bottom:1px solid #f6a401;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  }
+  #menu a{
+  width:100%;
+  border:0;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  }
+
+  #mainBanner{
+  width:100%;
+  }
+
+  .grid{
+  width:100%;
+  margin:2px 0;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  }
+
+  #facebook{
+  width:90%;
+  }
+  #twitter{
+  width:90%;
+  }
+}
+
+/* スマートフォン 横(ランドスケープ) */
+@media only screen and (max-width:640px){
+  #menu{
+  width:100%;
+  }
+  #menu li{
+  width:33.3%;
+  }
+  .logo{
+  display: none;
+  }
+}
+
+/* スマートフォン 縦(ポートレート) */
+@media only screen and (max-width:480px){
+}

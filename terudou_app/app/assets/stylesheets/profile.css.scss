@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/* 写真 */
+#profile{
+float:left;
+margin:0 16px 0 0;
+pading: 0;
+}
+
+#profile2{
+float:right;
+margin:0 0 0 16px;
+pading: 0;
+}
+
+#profile3{
+clear:both;
+margin:0;
+pading: 0;
+}
+
+/* 強調 */
+.serif{
+font-family:"ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝","MS PMincho",serif;
+font-style: italic;
+}
+
+/* 経歴 */
+#keireki{
+margin: 0 0 0 16px;
+}
+#keireki p{
+line-height: 0%;
+}
+#keireki ul{
+margin: 0;
+padding: 0;
+}
+.year {
+margin-bottom: 5px;
+font-weight: bold;
+list-style: none;
+border-bottom: 1px dashed #CCC;
+}

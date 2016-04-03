@@ -2,15 +2,34 @@
 <html lang="ja">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>アート書道家 | 照道（TERUDOU）</title>
+<% provide(:title, 'Home') %>
 <meta name="keywords" content="照道,アート書道家,書道">
 <meta name="description" content="アート書道家 | 照道（TERUDOU）">
 <meta name="viewport" content="width=device-width">
+
+<!--
+type:- old stylesheets link
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/top.css">
 <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+-->
+
+<link rel="stylesheet" type="text/css" href="../../assets/sylesheets/style.css.scss">
+<link rel="stylesheet" type="text/css" href="../../assets/sylesheets/top.css.scss">
+<link rel="stylesheet" type="text/css" href="../../assets/sylesheets/jquery.bxslider.css.scss">
+
+
+
+<!--
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript" href="../../assets/javascripts/jquery.bxslider.min.js"></script>
+-->
+
+
+<%= javascript_include_tag "" %>
+
 <script>
 $(function(){
 	$('.slider').bxSlider({
@@ -34,9 +53,12 @@ $(function(){
 <div id="header">
 	<div class="inner">
 		<div class="logo">
+		<!--
 			<a href="index.html"><img src="images/logo.png" alt="ロゴ"></a>
+		-->
+			<a href="index.html"><%= image_tag 'logo.png' %></a>
 		</div>
-	
+
 		<!-- トップナビゲーション -->
 		<div id="menu">
 			<h1>アート書道家 | <span>照道</span>TERUDOU</h1>
@@ -57,6 +79,7 @@ $(function(){
 <div id="mainBanner">
 	<div class="inner">
 		<ul class="slider">
+		<!--
 			<li><img src="images/slider/slider001.png" alt="スライドショー1"></li>
 			<li><img src="images/slider/slider002.png" alt="スライドショー2"></li>
 			<li><img src="images/slider/slider003.png" alt="スライドショー3"></li>
@@ -67,6 +90,19 @@ $(function(){
 			<li><img src="images/slider/slider008.png" alt="スライドショー8"></li>
 			<li><img src="images/slider/slider009.png" alt="スライドショー9"></li>
 			<li><img src="images/slider/slider010.png" alt="スライドショー10"></li>
+		-->
+
+			<li><%= image_tag 'slider/slider001.png' %></li>
+			<li><%= image_tag 'slider/slider002.png' %></li>
+			<li><%= image_tag 'slider/slider003.png' %></li>
+			<li><%= image_tag 'slider/slider004.png' %></li>
+			<li><%= image_tag 'slider/slider005.png' %></li>
+			<li><%= image_tag 'slider/slider006.png' %></li>
+			<li><%= image_tag 'slider/slider007.png' %></li>
+			<li><%= image_tag 'slider/slider008.png' %></li>
+			<li><%= image_tag 'slider/slider009.png' %></li>
+			<li><%= image_tag 'slider/slider010.png' %></li>
+
 		</ul>
 	</div>
 </div>
@@ -76,7 +112,7 @@ $(function(){
 <div id="wrapper">
 
 	<article class="grid center">
-		<h2><span class="alphabet"><span class="space">TERUDO</span>U<br/></span><span class="space">照</span>道</h2>	
+		<h2><span class="alphabet"><span class="space">TERUDO</span>U<br/></span><span class="space">照</span>道</h2>
 		<p>
 		はじめまして。照道です。<br/>
 		私は文字の持つpowerと私のkokoroを融合させて絵のような文字を描いています。
@@ -115,7 +151,7 @@ $(function(){
 				</blockquote></div></div>
 			</div>
 			<!-- / Facebook -->
-			
+
 			<!-- Twitter -->
 			<div id="twitter">
 				<a href="https://twitter.com/terudou334" target="_blank">Twitter<br/></a>

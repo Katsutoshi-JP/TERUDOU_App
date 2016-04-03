@@ -2,12 +2,19 @@
 <html lang="ja">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>アート書道家 | 照道（TERUDOU）| CONTACT</title>
+<% provide(:title, 'Contact') %>
 <meta name="keywords" content="照道,アート書道家,書道">
 <meta name="description" content="アート書道家 | 照道（TERUDOU）">
 <meta name="viewport" content="width=device-width">
+
+<!--
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/contact.css">
+-->
+
+<link rel="stylesheet" type="text/css" href="../../assets/sylesheets/style.css.scss">
+<link rel="stylesheet" type="text/css" href="../../assets/sylesheets/contact.css.scss">
+
 </head>
 <body>
 
@@ -15,9 +22,14 @@
 <div id="header">
 	<div class="inner">
 		<div class="logo">
+
+			<!--
 			<a href="index.html"><img src="images/logo.png" alt="ロゴ"></a>
+			-->
+			<a href="index.html"><%= image_tag 'logo.png' %></a>
+
 		</div>
-	
+
 		<!-- トップナビゲーション -->
 		<div id="menu">
 			<h1>アート書道家 | <span>照道</span>TERUDOU</h1>

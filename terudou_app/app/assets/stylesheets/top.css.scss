@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* バナー */
+#mainBanner{
+clear:both;
+line-height:0;
+}
+#mainBanner .inner{
+position:relative;
+}
+
+/* グリッド中央寄せ */
+.center{
+text-align:center;
+}
+.center h2{
+text-align:center;
+border-bottom:none;
+font-size:2.5em;
+line-height: 100%;
+}
+.alphabet {
+font-size:0.6em;
+letter-spacing: 0.6em;
+}
+.space {
+letter-spacing: 1em;
+}
+.center p{
+text-align:center;
+}
+
+/* News */
+#newinfo{
+  overflow: auto;
+  margin: 0;
+  padding: 8px 16px 8px 16px;
+}
+#newinfo dt {
+  float: left;
+  width: 8em;
+  font-size:0.8em;
+}
+#newinfo dd {
+  padding-left: 4em;
+}

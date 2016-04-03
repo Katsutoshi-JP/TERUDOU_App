@@ -1,14 +1,15 @@
 Rails.application.routes.draw do
-  get 'terudou_app/home'
+  #get 'terudou_app/home'
   #get 'terudou_app/profile'
   #get 'terudou_app/gallary'
   #get 'terudou_app/blog'
   #get 'terudou_app/contact'
 
+  get '/home' => 'terudou_app#home'
   get '/profile' => 'terudou_app#profile'
-  get '/gallary' => 'terudou_app#profile'
-  get '/blog' => 'terudou_app#profile'
-  get '/contact' => 'terudou_app#profile'
+  get '/gallary' => 'terudou_app#gallary'
+  get '/blog' => 'terudou_app#blog'
+  get '/contact' => 'terudou_app#contact'
 
 
 
