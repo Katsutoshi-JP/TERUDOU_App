@@ -1,0 +1,26 @@
+<div id="header">
+  <div class="inner">
+    <div class="logo">
+
+    <!--
+    Modify Code 2016/4/4
+    convert from html to rails code
+    -->
+      <%= link_to image_tag('logo.png', { :border => '0', :alt => 'ロゴ'}), root_path %>
+    </div>
+
+    <!-- トップナビゲーション -->
+    <button class="btn btn-primary">primary</button>
+    <div id="menu">
+      <h1>アート書道家 | <span>照道</span>TERUDOU</h1>
+      <ul>
+        <li class="active"><%= link_to "Top",    root_path %></li>
+        <li><%= link_to "Profile",    profile_path %></li>
+        <li><%= link_to "Gallary",    gallary_path %></li>
+        <li><a href="http://blog.livedoor.jp/terudou/" target="_blank">Blog</a></li>
+        <li><%= link_to "Contact",    contact_path %></li>
+      </ul>
+    </div>
+    <!-- トップナビゲーション -->
+  </div>
+</div>
